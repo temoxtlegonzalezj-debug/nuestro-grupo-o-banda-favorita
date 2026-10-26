@@ -1,0 +1,139 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle at top, #1e3c72 0%, #0a1020 100%);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #f0f0f0;
+  min-height: 100vh;
+}
+
+header {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white;
+  padding: 25px;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3em;
+  letter-spacing: 5px;
+  text-shadow: 0 0 15px rgba(255,255,255,0.8), 2px 2px 10px black;
+  border-bottom: 4px solid #ffeb3b;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 25px;
+  flex-wrap: wrap;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(5px);
+}
+
+nav img {
+  border-radius: 15px;
+  border: 3px solid #00c6ff;
+  box-shadow: 0 0 20px rgba(0,198,255,0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+  object-fit: cover;
+  height: 200px;
+}
+
+nav img:hover {
+  transform: scale(1.1) rotate(2deg);
+  box-shadow: 0 0 30px #ffeb3b;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 700px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+}
+
+article video {
+  border-radius: 15px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0 20px rgba(0,114,255,0.6);
+}
+
+p {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  color: #222;
+  border-radius: 10px;
+  border-left: 6px solid #0072ff;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+ol {
+  max-width: 800px;
+  margin: 0 auto 150px auto;
+  list-style: none;
+  padding: 0;
+}
+
+ol ul {
+  background: rgba(255,255,255,0.08);
+  margin: 12px 0;
+  padding: 15px 20px;
+  border-radius: 10px;
+  border-left: 4px solid #ffeb3b;
+  transition: background 0.3s;
+}
+
+ol ul:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+ol ul::before {
+  content: "♪ ";
+  color: #00c6ff;
+  font-weight: bold;
+}
+
+a {
+  display: block;
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+  color: #ffeb3b;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: white;
+  text-shadow: 0 0 10px #ffeb3b;
+}
+
+footer {
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(10px);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  border-top: 2px solid #0072ff;
+}
+
+footer audio {
+  width: 300px;
+}
